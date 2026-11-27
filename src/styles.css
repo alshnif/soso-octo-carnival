@@ -1,1 +1,48 @@
-body { margin: 0; font-family: Inter, system-ui, Arial; }
+:root {
+  font-family: system-ui, "Segoe UI", Tahoma, Arial, sans-serif;
+  color: #172033;
+  background-color: #f8fafc;
+  line-height: 1.8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+.app-content {
+  max-inline-size: 48rem;
+  margin-inline: auto;
+  padding-block: clamp(2rem, 8vw, 5rem);
+  padding-inline: clamp(1rem, 5vw, 2.5rem);
+  text-align: start;
+  overflow-wrap: anywhere;
+}
+
+h1 {
+  margin-block: 0 1rem;
+  font-size: clamp(1.75rem, 5vw, 2.5rem);
+  line-height: 1.5;
+}
+
+p {
+  margin-block: 0;
+  font-size: 1.125rem;
+}
+
+code {
+  display: inline-block;
+  max-inline-size: 100%;
+  padding-block: 0.1rem;
+  padding-inline: 0.4rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.25rem;
+  background-color: #e2e8f0;
+  font-family: ui-monospace, SFMono-Regular, Consolas, monospace;
+  font-size: 0.9em;
+  unicode-bidi: isolate;
+}
