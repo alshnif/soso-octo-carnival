@@ -1,6 +1,12 @@
 node_modules/
 dist/
+coverage/
 .env
-.env.local
+.env.*
+!.env.example
+*.local
+*.pem
+*.key
 .vscode/
 .DS_Store
+npm-debug.log*

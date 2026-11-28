@@ -1,0 +1,67 @@
+name: بلاغ خطأ
+description: الإبلاغ عن خلل قابل لإعادة الإنتاج دون بيانات حساسة.
+title: "[خطأ]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        شكرًا لمساعدتك. هذه البلاغات عامة؛ لا ترفق أسرارًا أو بيانات شخصية أو ملفات بيئة خاصة.
+        للإبلاغ عن ثغرة أمنية، اتبع SECURITY.md ولا تنشر تفاصيلها هنا.
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: الأمان والخصوصية
+      options:
+        - label: هذا بلاغ خلل غير أمني، وقد أزلت الأسرار والبيانات الشخصية من النص والمرفقات.
+          required: true
+  - type: textarea
+    id: description
+    attributes:
+      label: وصف الخلل
+      description: صف المشكلة باختصار وما الذي تأثر بها.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: خطوات إعادة الإنتاج
+      description: اكتب خطوات واضحة باستخدام بيانات وهمية فقط.
+      placeholder: |
+        1. شغّل المشروع باستخدام npm run dev.
+        2. افتح الصفحة أو نفّذ الإجراء التالي...
+        3. لاحظ النتيجة...
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: السلوك المتوقع
+      description: ماذا كان ينبغي أن يحدث؟
+    validations:
+      required: true
+  - type: textarea
+    id: actual
+    attributes:
+      label: السلوك الفعلي
+      description: ماذا حدث بدلًا من ذلك؟
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: البيئة
+      description: اذكر نظام التشغيل والمتصفح وإصداره وإصدار Node.js والفرع أو معرّف الالتزام إن عُرف.
+      placeholder: |
+        نظام التشغيل:
+        المتصفح وإصداره:
+        إصدار Node.js:
+        الفرع أو معرّف الالتزام:
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: سجلات أو صور إضافية
+      description: اختياري؛ أرفق فقط الحد الأدنى اللازم بعد حذف الأسرار والبيانات الشخصية. لا ترفق محتويات ملفات البيئة.
+    validations:
+      required: false

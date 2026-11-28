@@ -1,0 +1,44 @@
+name: اقتراح ميزة
+description: اقتراح تحسين واضح للمشروع.
+title: "[ميزة]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        وضّح المشكلة التي يحلها الاقتراح وكيف يستفيد منها المستخدم.
+        هذا النموذج عام؛ لا تُدرج أسرارًا أو بيانات شخصية. اتبع SECURITY.md للإبلاغ عن الثغرات.
+  - type: textarea
+    id: problem
+    attributes:
+      label: المشكلة أو الحاجة
+      description: ما المشكلة الحالية ومن يتأثر بها؟ استخدم أمثلة ببيانات وهمية.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: الحل المقترح
+      description: صف السلوك المطلوب والنتيجة التي تتوقعها.
+    validations:
+      required: true
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: البدائل
+      description: هل توجد طريقة حالية أو حلول أخرى؟ ولماذا تفضّل هذا الاقتراح؟
+    validations:
+      required: false
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: معايير القبول
+      description: اقترح نقاطًا قابلة للتحقق، مع مراعاة العربية وRTL وإتاحة الوصول إن انطبق.
+    validations:
+      required: false
+  - type: checkboxes
+    id: safety
+    attributes:
+      label: الأمان والخصوصية
+      options:
+        - label: راجعت النص والمرفقات، ولا تحتوي على أسرار أو بيانات شخصية أو تفاصيل ثغرة أمنية.
+          required: true

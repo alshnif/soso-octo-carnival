@@ -1,10 +1,20 @@
-import React from 'react'
-
 export default function App() {
   return (
-    <div style={{fontFamily:'Inter, system-ui, Arial',padding:40}}>
-      <h1>مرحباً — Supreme Octo Carnival</h1>
-      <p>هذا مشروع بداية مبني بـ React + Vite. قم بالتعديل في <code>src/</code> ثم شغّل <code>npm run dev</code>.</p>
-    </div>
-  )
+    <main className="app-content" aria-labelledby="page-title">
+      <h1 id="page-title">
+        مرحباً —{" "}
+        <bdi lang="en" dir="ltr">
+          Soso Octo Carnival
+        </bdi>
+      </h1>
+      <p>
+        هذا مشروع بداية مبني بـ{" "}
+        <bdi lang="en" dir="ltr">
+          React + Vite
+        </bdi>
+        . قم بالتعديل في <code dir="ltr">src/</code> ثم شغّل{" "}
+        <code dir="ltr">npm run dev</code>.
+      </p>
+    </main>
+  );
 }
